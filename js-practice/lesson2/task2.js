@@ -51,38 +51,38 @@ console.log(personalMovieDB);
 
 /* Альтернативный способ с помощью цикла while */
 
-// let i = 0;
+let i = 0;
 
-// while (i < 2) {
-//     const firstQuestion = prompt('Один из последних просмотренных фильмов?', ''),
-//           secondQuestion = prompt('На сколько оцените его?', '');
+while (i < 2) {
+    const firstQuestion = prompt('Один из последних просмотренных фильмов?', ''),
+          secondQuestion = prompt('На сколько оцените его?', '');
 
-//     i++;
+    i++;
 
-//     if (firstQuestion != null && secondQuestion != null &&
-//         firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
-//         personalMovieDB[firstQuestion] = secondQuestion;
-//     } else {
-//         console.log('Error!');
-//         i--;
-//     }
-// }
+    if (firstQuestion != null && secondQuestion != null &&
+        firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
+        personalMovieDB[firstQuestion] = secondQuestion;
+    } else {
+        console.log('Error!');
+        i--;
+    }
+}
 
-// /* Альтернативный способ с помощью цикла do...while */
+/* Альтернативный способ с помощью цикла do...while */
 
-// let i = 0;
+let i = 0;
 
-// do {
-//     const firstQuestion = prompt('Один из последних просмотренных фильмов?', ''),
-//           secondQuestion = prompt('На сколько оцените его?', '');
+do {
+    const firstQuestion = prompt('Один из последних просмотренных фильмов?', ''),
+          secondQuestion = prompt('На сколько оцените его?', '');
 
-//     i++;
+    i++;
 
-//     if (firstQuestion != null && secondQuestion != null &&
-//         firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
-//         personalMovieDB[firstQuestion] = secondQuestion;
-//     } else {
-//         console.log('Error!');
-//         i--;
-//     }
-// } while (i < 2);
+    if (firstQuestion != null && secondQuestion != null &&
+        firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
+        personalMovieDB[firstQuestion] = secondQuestion;
+    } else {
+        console.log('Error!');
+        i--;
+    }
+} while (i < 2);
