@@ -43,5 +43,3 @@ personalMovieDB.movies[firstQuestion] = secondQuestion;
 personalMovieDB.movies[thirdQuestion] = fourthQuestion;
 
 console.log(personalMovieDB);
-
-
