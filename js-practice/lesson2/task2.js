@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /* Задание на урок:
 
@@ -70,19 +70,19 @@ while (i < 2) {
 
 /* Альтернативный способ с помощью цикла do...while */
 
-let i = 0;
+let counter = 0;
 
 do {
     const firstQuestion = prompt('Один из последних просмотренных фильмов?', ''),
           secondQuestion = prompt('На сколько оцените его?', '');
 
-    i++;
+    counter++;
 
     if (firstQuestion != null && secondQuestion != null &&
         firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
         personalMovieDB[firstQuestion] = secondQuestion;
     } else {
         console.log('Error!');
-        i--;
+        counter--;
     }
-} while (i < 2);
+} while (counter < 2);
