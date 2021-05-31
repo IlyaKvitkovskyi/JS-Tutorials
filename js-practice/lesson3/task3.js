@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 /* Задание на урок:
 
@@ -15,7 +15,7 @@ let numberOfFilms;
 function start() {
     numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+    while (numberOfFilms === '' || numberOfFilms === null || isNaN(numberOfFilms)) {
         numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
     }
 }
@@ -35,8 +35,8 @@ function rememberMyFilms() {
         const firstQuestion = prompt('Один из последних просмотренных фильмов?', ''),
               secondQuestion = prompt('На сколько оцените его?', '');
 
-        if (firstQuestion != null && secondQuestion != null &&
-            firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
+        if (firstQuestion !== null && secondQuestion !== null &&
+            firstQuestion !== '' && secondQuestion !== '' && firstQuestion.length < 50) {
             personalMovieDB.movies[firstQuestion] = secondQuestion;
         } else {
             console.log('Error');

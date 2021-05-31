@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 /* Задание на урок:
 
@@ -26,10 +26,10 @@ const personalMovieDB = {
 
 for (let i = 0; i < 2; i++) {
     const firstQuestion = prompt('Один из последних просмотренных фильмов?', ''),
-          secondQuestion = prompt('На сколько оцените его?', '');
+        secondQuestion = prompt('На сколько оцените его?', '');
 
-    if (firstQuestion != null && secondQuestion != null &&
-        firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
+    if (firstQuestion !== null && secondQuestion !== null &&
+        firstQuestion !== '' && secondQuestion !== '' && firstQuestion.length < 50) {
         personalMovieDB.movies[firstQuestion] = secondQuestion;
     } else {
         console.log('Error');
@@ -55,12 +55,12 @@ let i = 0;
 
 while (i < 2) {
     const firstQuestion = prompt('Один из последних просмотренных фильмов?', ''),
-          secondQuestion = prompt('На сколько оцените его?', '');
+        secondQuestion = prompt('На сколько оцените его?', '');
 
     i++;
 
-    if (firstQuestion != null && secondQuestion != null &&
-        firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
+    if (firstQuestion !== null && secondQuestion !== null &&
+        firstQuestion !== '' && secondQuestion !== '' && firstQuestion.length < 50) {
         personalMovieDB[firstQuestion] = secondQuestion;
     } else {
         console.log('Error!');
@@ -74,12 +74,12 @@ let counter = 0;
 
 do {
     const firstQuestion = prompt('Один из последних просмотренных фильмов?', ''),
-          secondQuestion = prompt('На сколько оцените его?', '');
+        secondQuestion = prompt('На сколько оцените его?', '');
 
     counter++;
 
-    if (firstQuestion != null && secondQuestion != null &&
-        firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
+    if (firstQuestion !== null && secondQuestion !== null &&
+        firstQuestion !== '' && secondQuestion !== '' && firstQuestion.length < 50) {
         personalMovieDB[firstQuestion] = secondQuestion;
     } else {
         console.log('Error!');
