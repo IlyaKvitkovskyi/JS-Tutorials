@@ -33,7 +33,7 @@ const personalMovieDB = {
 function rememberMyFilms() {
     for (let i = 0; i < 2; i++) {
         const firstQuestion = prompt('Один из последних просмотренных фильмов?', ''),
-              secondQuestion = prompt('На сколько оцените его?', '');
+            secondQuestion = prompt('На сколько оцените его?', '');
 
         if (firstQuestion !== null && secondQuestion !== null &&
             firstQuestion !== '' && secondQuestion !== '' && firstQuestion.length < 50) {
@@ -70,7 +70,7 @@ function showMyDB(hidden) {
 showMyDB(personalMovieDB.privat);
 
 function writeYourGenres() {
-    for (let i = 1; i <=3; i++) {
+    for (let i = 1; i <= 3; i++) {
         personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
     }
 }
