@@ -1,1 +1,0 @@
-Here i am just learning the javascript syntax!
